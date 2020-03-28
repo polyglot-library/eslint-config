@@ -1,6 +1,6 @@
 {
   "name": "@polyglot-library/eslint-config",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "description": "ESLint shareable config for the Poolyglot projects",
   "license": "GPL-3.0",
   "repository": "polyglot-library/eslint-config",
@@ -9,6 +9,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
+    "prepublishOnly": "yarn lint && yarn test",
+    "lint": "eslint ./",
     "test": "node test/test.js"
   },
   "files": [
@@ -34,11 +36,10 @@
     "enforce",
     "hint"
   ],
-  "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^5.16.0"
-  },
   "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-babel": "^5.3.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.19.0"
   },
