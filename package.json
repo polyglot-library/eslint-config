@@ -1,6 +1,6 @@
 {
   "name": "@polyglot-library/eslint-config",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "description": "ESLint shareable config for the Poolyglot projects",
   "license": "GPL-3.0",
   "repository": "polyglot-library/eslint-config",
@@ -35,7 +35,10 @@
     "hint"
   ],
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.16.0"
+  },
+  "dependencies": {
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.19.0"
   },
