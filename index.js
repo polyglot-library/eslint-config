@@ -2,6 +2,11 @@ module.exports = {
   'settings': {
     'react': {
       'version': 'detect'
+    },
+    'import/resolver': {
+      'node': {
+        'paths': ['src']
+      }
     }
   },
   'parser': 'babel-eslint',
@@ -16,10 +21,13 @@ module.exports = {
   'extends': [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
     'google'
   ],
   'plugins': [
     'babel',
+    'import',
     'react'
   ],
   'rules': {
