@@ -1,6 +1,6 @@
 {
   "name": "@polyglot-library/eslint-config",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "ESLint shareable config for the Poolyglot projects",
   "license": "GPL-3.0",
   "repository": "polyglot-library/eslint-config",
